@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<link href="./css/index.css" rel="stylesheet" >
+<html>
+    <head>
+        <title>
+            Visualization of Tianjin Air Pollution
+        </title>
+        <meta charset="utf-8">
+        <meta name = 'author' content = 'Susie'>
+        <meta name = 'description' content="Visualization of the intensity distribution of several major pollutants in Beijing over two weeks">
+        
+        <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+        <script src="./js/d3.min.js"></script>
+        <script src="./js/d3.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="content">
+                <h1>
+                    Visualization of Tianjin
+                    <span class="color">air</span>
+                    Pollution<br>(PM2.5 12/09-12/15)
+                </h1>
+                <p class="author">
+                    By Susie
+                </p>
+            </div>
+        </header>
+        
+        <section id="vis">
+            <div class="content">
+                <div id="stations">
+                    <div id="map-warpper" style="float: left;">
+                        <svg class="map">
+                        </svg>
+                    </div>
+                    <div id="station"  style="float: right;">
+                        <h2 id='station-name'>
+                            天津市
+                        </h2>
+                        <div id='histo-warpper' height='500'>
+                            <svg id='histo'></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <script data-main="js/air.js" src="require.js"></script> -->
+        <script src="js/air.js"></script>
+    </body>
+</html>
